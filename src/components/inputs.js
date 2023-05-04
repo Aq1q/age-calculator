@@ -22,7 +22,7 @@ const Inputs = (props) => {
             d.setCustomValidity('empty')
             setDayError('This field is required');
             setIsValidDay(false);
-        } else if(!dayPattern.test(props.day)) {
+        } else if(!dayPattern.test(props.day) || props.day < 1) {
             console.log(dayPattern.test(props.day))
             setDayError('Must be a valid day');
             const d = document.getElementById('day');
@@ -39,7 +39,7 @@ const Inputs = (props) => {
             const m = document.getElementById('month');
             m.setCustomValidity('empty');
             setIsValidMonth(false);
-        } else if(props.month > 12 || props.month.length < 2) {
+        } else if(props.month > 12 || props.month.length < 2 || props.month < 1) {
             setMonthError('Must be a valid month');
             setIsValidMonth(false);
         } else {
@@ -58,7 +58,7 @@ const Inputs = (props) => {
             const y = document.getElementById('year');
             y.setCustomValidity('empty');
             setIsValidYear(false);
-        } else if(props.year.length < 4)  {
+        } else if(props.year.length < 4 || props.year < 1)  {
             setYearError('Must be a valid year');
             setIsValidYear(false);
         } else {

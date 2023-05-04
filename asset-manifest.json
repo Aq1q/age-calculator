@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d97ad2c.css",
-    "main.js": "/static/js/main.a694d043.js",
-    "static/media/Poppins-Italic.ttf": "./static/media/Poppins-Italic.e373f6163127e2d469af.ttf",
-    "static/media/Poppins-ExtraBoldItalic.ttf": "./static/media/Poppins-ExtraBoldItalic.73d4495be63ad83b25cc.ttf",
-    "static/media/Poppins-Bold.ttf": "./static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
-    "index.html": "/index.html",
-    "static/media/icon-arrow.svg": "static/media/icon-arrow.76e952b1b427b84b83bd01f2f4822499.svg",
-    "main.5d97ad2c.css.map": "/static/css/main.5d97ad2c.css.map",
-    "main.a694d043.js.map": "/static/js/main.a694d043.js.map"
+    "main.css": "/age-calculator/static/css/main.afd18c95.css",
+    "main.js": "/age-calculator/static/js/main.58f88cba.js",
+    "static/media/Poppins-Italic.ttf": "/age-calculator/static/media/Poppins-Italic.e373f6163127e2d469af.ttf",
+    "static/media/Poppins-ExtraBoldItalic.ttf": "/age-calculator/static/media/Poppins-ExtraBoldItalic.73d4495be63ad83b25cc.ttf",
+    "static/media/Poppins-Bold.ttf": "/age-calculator/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "index.html": "/age-calculator/index.html",
+    "static/media/icon-arrow.svg": "/age-calculator/static/media/icon-arrow.76e952b1b427b84b83bd01f2f4822499.svg",
+    "main.afd18c95.css.map": "/age-calculator/static/css/main.afd18c95.css.map",
+    "main.58f88cba.js.map": "/age-calculator/static/js/main.58f88cba.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d97ad2c.css",
-    "static/js/main.a694d043.js"
+    "static/css/main.afd18c95.css",
+    "static/js/main.58f88cba.js"
   ]
 }

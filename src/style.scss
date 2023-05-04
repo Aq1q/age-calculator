@@ -1,0 +1,162 @@
+//Primary colors
+
+$purple: hsl(259, 100%, 65%);
+$light-red: hsl(0, 100%, 67%);
+
+//Neutral colors
+
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey: hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$Off-black: hsl(0, 0%, 8%);
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: PoppinsItalic;
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: PoppinsExtraItalic;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-grey;
+}
+
+.App{
+    height: 486px;
+    width: 343px;
+    background-color: $white;
+    padding: 52px 24px;
+    border-radius: 20px 20px 20% 20px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 65px;
+    position: relative;
+    hr{
+        width: 295px;
+    }
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $purple;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    img{
+        height: 25px;
+        width: 25px;
+    }
+}
+.image:hover {
+    background-color: $Off-black;
+    cursor: pointer;
+}
+
+#form-container{
+    padding-bottom: 30px;
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        .input-sec{
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            width: 88px;
+            gap: 6px;
+            input{
+                width: 88px;
+                height: 54px;
+                font-size: 22px;
+                border-radius: 10px;
+                border-color: $light-grey;
+                padding-left: 15px;
+                border-width: 2px;
+            }
+            input:invalid{
+                border-color: $light-red;
+                ~label {
+                    color:$light-red;
+                }
+                ~span {
+                    display: block;
+                    color: red;
+                }
+            }
+            input:focus{
+                border-color: $purple;
+                outline: none;
+            }
+            input:hover{
+                cursor: pointer;
+            }
+            label {
+                color: $smokey-grey;
+                letter-spacing: 2px;
+                font-size: 12px;
+                font-family: PoppinsBold;
+            }
+            span{
+                font-size: 8px;
+                bottom: -25px;
+                position: absolute;
+                display: none;
+                order: -1;
+                font-family: PoppinsItalic;
+                text-align: left;
+            }
+        }
+    }
+}
+#age-display{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+}
+.age-heading{
+    text-align: left;
+    font-size: 2.5em;
+    font-family: PoppinsExtraItalic;
+    margin: 0;
+    line-height: 1.5em;
+}
+.age-span {
+    color: $purple;
+    font-size: 3rem;
+}

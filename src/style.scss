@@ -106,6 +106,7 @@ body {
                 border-color: $light-grey;
                 padding-left: 15px;
                 border-width: 2px;
+                font-family: PoppinsBold;
             }
             input:invalid{
                 border-color: $light-red;
@@ -159,4 +160,58 @@ body {
 .age-span {
     color: $purple;
     font-size: 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .App{
+        padding: 56px;
+        height: 651px;
+        width: 841px;
+        hr{
+            width: 100%;
+        }
+        #form-container{
+            form{
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            gap: 32px;
+        }
+        }
+        input{
+            font-size: 32px !important;
+            width: 160px !important;
+            height: 72px !important;
+            padding-left: 25px !important;
+        }
+        .input-sec{
+            width: 160px !important;
+        }
+    }
+    .img-container{
+        height: 95px;
+    }
+    .image{
+        margin-top: auto;
+        margin-bottom: auto;
+        right: 0 !important;
+        left: 0 !important;
+        margin-right: 0;
+        height: 95px;
+        width: 95px;
+        img{
+            width: 46px;
+            height: 46px;
+        }
+    }
+    #age-display{
+        gap: 5px;
+    }
+    .age-heading{
+        font-size: 5em;
+        line-height: 1em;
+    }
+    .age-span{
+        font-size: 4.5rem;
+        letter-spacing: 15px;
+    }
 }

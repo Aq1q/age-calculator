@@ -28,7 +28,7 @@ const Overview = (props) => {
     return (
         <div id="age-display">
             <h1 className="age-heading"><span className="age-span">{localYear}</span> years</h1>
-            <h1 className="age-heading"><span className="age-span">{localMonth}</span> month</h1>
+            <h1 className="age-heading"><span className="age-span">{localMonth}</span> months</h1>
             <h1 className="age-heading"><span className="age-span">{localDay}</span> days</h1>
         </div>
     );
